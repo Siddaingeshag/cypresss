@@ -1,0 +1,26 @@
+[
+  {
+    "testName": "Valid credentials",
+    "username": "Admin",
+    "password": "admin123",
+    "expectedResult": "success"
+  },
+  {
+    "testName": "Invalid credentials",
+    "username": "InvalidUser",
+    "password": "wrongpassword",
+    "expectedResult": "failure"
+  },
+  {
+    "testName": "Empty username",
+    "username": "",
+    "password": "admin123",
+    "expectedResult": "failure_empty_username"
+  },
+  {
+    "testName": "Empty password",
+    "username": "Admin",
+    "password": "",
+    "expectedResult": "failure_empty_password"
+  }
+]
