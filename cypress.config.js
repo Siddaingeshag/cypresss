@@ -24,4 +24,16 @@ module.exports = defineConfig({
   videosFolder: 'cypress/videos', // Videos save location
   viewportWidth: 1280,
   viewportHeight: 720,
+
+  // Reporter configuration
+  reporter: 'mochawesome',
+  reporterOptions: {
+    reportDir: 'cypress/reports',
+    overwrite: false,
+    html: true,
+    json: true,
+    charts: true,
+    reportPageTitle: 'OrangeHRM Test Report',
+    inlineAssets: true,
+  },
 });
