@@ -32,7 +32,7 @@ jobs:
         run: npx cypress install
  
       - name: Run Cypress tests (screenshots spec)
-        run: npx cypress run --spec cypress/e2e/day3/*
+        run: npx cypress run --spec cypress/e2e/day3/screen_shot.cy.js
         env:
           CYPRESS_baseUrl: https://opensource-demo.orangehrmlive.com
  
